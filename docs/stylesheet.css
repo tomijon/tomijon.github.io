@@ -31,8 +31,8 @@ img {
 }
 
 .content {
+    .center;
     width: 75%;
-    margin: 0 auto;
     background-color: #454545;
 }
 
@@ -87,10 +87,7 @@ img {
 
 .project-title {
     .welcome; Slab;
-    color: #ffffff;
     font-size: 600%;
-    text-align: center;
-    padding: 10px 5px 1px 5px;
 }
 
 .project-text {
