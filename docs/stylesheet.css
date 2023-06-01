@@ -34,6 +34,13 @@ img {
     width: 75%;
     margin: 0 auto;
     background-color: #454545;
+    text-decoration: underline;
+}
+
+a.back {
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: left;
 }
 
 .welcome {
