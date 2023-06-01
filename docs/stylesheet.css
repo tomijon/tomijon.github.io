@@ -44,13 +44,13 @@ img {
 }
 
 .welcome {
-     color: #ffffff;
-     font-size: 1000%;
-     font-family: Roboto Slab;
-     text-align: center;
-     padding: 10px 5px 1px 5px;
-     display: block;
-     margin-bottom: 0;
+    color: #ffffff;
+    font-size: 1000%;
+    font-family: Roboto Slab;
+    text-align: center;
+    padding: 10px 5px 1px 5px;
+    display: block;
+    margin-bottom: 0;
 }
 
 .subtitle {
@@ -86,11 +86,20 @@ img {
 }
 
 .project-title {
-    .welcome;
+    color: #ffffff;
     font-size: 600%;
+    font-family: Roboto Slab;
+    text-align: center;
+    padding: 10px 5px 1px 5px;
+    display: block;
+    margin-bottom: 0;
 }
 
 .project-text {
-    .p;
+    color: #dddddd;
+    font-size: 18px;
+    padding: 5px 2.5%;
+    display: block;
+    text-align: center;
     text-align: justify;
 }
