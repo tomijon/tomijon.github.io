@@ -31,7 +31,7 @@ img {
 }
 
 .content {
-    .center;
+    margin: 0 auto;
     width: 75%;
     background-color: #454545;
 }
