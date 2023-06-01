@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            background-color: #252525;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        p {
+            color: #dddddd;
+            font-size: 18px;
+            padding: 5px 10px;
+            display: block;
+            text-align: center;
+        }
+
+        a {
+            color: #252525;
+            font-size: 18px;
+            padding: 5px 10px;
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img {
+            margin: auto auto;
+            width: 100%
+        }
+
+        .center {
+            margin: 0 auto;
+        }
+
+        .content {
+            width: 75%;
+            margin: 0 auto;
+            background-color: #454545;
+        }
+
+        .welcome {
+             color: #ffffff;
+             font-size: 1000%;
+             text-align: center;
+             padding: 10px 5px 1px 5px;
+             display: block;
+             margin-bottom: 0;
+        }
+
+        .subtitle {
+            color: #ffffff;
+            font-size: 400%;
+            text-align: center;
+        }
+
+        .bar {
+            border-color: #aaaaaa;
+            display:block;
+            width: 95%;
+        }
+
+        .project-list {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .project {
+            text-align: left;
+            width: 33%;
+            height: auto;
+            padding: 20px 20px 10px 20px;
+            background-color: white;
+            border-width: 20px;
+            border-color: #454545;
+            border-style: solid;
+        }
+
+        .project.empty {
+            background-color: #454545;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="welcome">Welcome</h1>
+        <hr class="bar">
+        <p>Hello, I am a software engineer.</p>
+        <!--<img width=500px height=500px>!-->
+        <hr class="bar">
+        <h2 class="subtitle">Projects</h2>
+        <table class="project-list">
+            <tr class="center">
+                <td class="project">
+                    <img src="projects/project_1/thumbnail.gif">
+                    <a>The Art of Biology</a>
+                </td>
+                <td class="project empty">
+
+                </td>
+                <td class="project empty">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
