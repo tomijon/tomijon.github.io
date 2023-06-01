@@ -39,6 +39,7 @@ img {
 .welcome {
      color: #ffffff;
      font-size: 1000%;
+     font-family: Roboto Slab;
      text-align: center;
      padding: 10px 5px 1px 5px;
      display: block;
@@ -78,6 +79,7 @@ img {
 }
 
 .project-title {
+    font-family: Roboto Slab;
     color: #ffffff;
     font-size: 600%;
     text-align: center;
