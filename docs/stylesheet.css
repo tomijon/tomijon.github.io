@@ -1,7 +1,8 @@
 body {
-    background-color: #252525;
+    background-color: #100624;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 2% 10px;
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 }
 
 a {
-    color: #252525;
+    color: #dddddd;
     font-size: 18px;
     padding: 5px 10px;
     display: block;
@@ -32,8 +33,9 @@ img {
 
 .content {
     margin: 0 auto;
-    width: 75%;
-    background-color: #454545;
+    width: 50%;
+    background-color: #563566;
+    padding: 5px 10px;
 }
 
 .back {
@@ -60,8 +62,8 @@ img {
 }
 
 .bar {
-    border-color: #aaaaaa;
-    display:block;
+    border-color: #b38b47;
+    display: block;
     width: 95%;
 }
 
@@ -75,14 +77,14 @@ img {
     width: 33%;
     height: auto;
     padding: 20px 20px 10px 20px;
-    background-color: white;
+    background-color: #875991;
     border-width: 20px;
-    border-color: #454545;
+    border-color: #875991;
     border-style: solid;
 }
 
 .project.empty {
-    background-color: #454545;
+    background-color: #875991;
 }
 
 .project-title {
@@ -98,8 +100,21 @@ img {
 .project-text {
     color: #dddddd;
     font-size: 18px;
-    padding: 5px 2.5%;
+    padding: 1px 2.5%;
     display: block;
-    text-align: center;
     text-align: justify;
+} 
+
+.project-image {
+    padding: 0px 2.5% 0px 2.5%;
+}
+
+.project-heading {
+    color: #dddddd;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 1px 2.5%;
+    display: block;
+    text-align: left;
+    text-decoration: underline;
 }

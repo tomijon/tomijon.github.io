@@ -9,37 +9,34 @@
         <a class="back" href="../../index.html">< back</a>
         <h1 class="project-title">Bubble Pop</h1>
         <hr class="bar">
+        <h2 class="project-heading">Introduction</h2>
         <p class="project-text">Bubble Pop was a simple game made in 48 hours for the Global Game Jam 2025. The aim of the game is
         to score as high as possible before the number of bubbles on your screen becomes too many to handle! Pop bubbles by typing
         the letter shown on the bubble.</p>
-        <br />
         <p class="project-text">I had a few main goals for this project. My main goal was to see how far my skills in C++ had come.
         I also wanted to learn how to use CMake and I also wanted to explore using audio in an application. I am quite happy with how it
         turned out. However, I didn't have time to explore using audio in the game due to the time restriction.
         </p>
-        <br />
+        <img class="project-image" src="../assets/bubble_pop/title_screen.png"/>
+        <h2 class="project-heading">The Game</h2>
         <p class="project-text">The project was written in C++ using the Simple and Fast Multimedia Library (SFML) 3.0.
         This was the first time I had used SFML, and found it to be similar to Pygame. However, I also found it incredibly frustrating.
         For example, setting a window to fullscreen would require adding a window style flag of None to the function call, while I found
         in older versions of SFML, Fullscreen was a window style and had since been replaced. There were numerous small things like this
         that I found odd and rather confusing.</p>
-        <br />
         <p class="project-text">I also felt like rendering text was a battle. At one point I was modifying a brand new text object and a text object located in
         a completely different part of my program was being updated. There was no link between the two objects, other than the member name
         was the same. You would think 2 members of the same name in different classes were the same but I guess not.
         I managed to fix this in the end by updating the text every draw call. This was fine as the game is so lightweight but not ideal.
         </p>
-        <br />
         <p class="project-text">My experience with CMake wasn't much better. At first I was using the GUI and on the first "build", everything worked.
         Unfortunately, I didn't know this at the time (as visual studio was throwing an error) so I restarted (from scratch). Except this time (even after clearing cache),
         CMake could no longer build the project. Mind. Blown. In the end I switched to using console commands and everything ended up working but this caused a lot
         of confusion with little explanation.
         </p>
-        <br />
         <p class="project-text">One interesting thing I learnt from using CMake to build the SMFL project was that you could fetch git repositories as dependencies
         and integrate them directly into your build line, removing the need to download dependencies manually. I can see this would be quite useful.</p>
 
-        <br />
         <p class="project-text">Overall, I enjoyed the project. I felt like my knowledge of C++ was enough to complete the task. However, I will most probably not be
         using SFML 3.0 ever again. I am confident there are much better, more intuative libraries out there that doesn't do some wack unexplained stuff.</p>
     </div>
