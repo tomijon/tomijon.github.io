@@ -15,12 +15,15 @@ p {
 }
 
 a {
+    padding: 2.5%;
     color: #ffffff;
     font-size: 18px;
-    padding: 5px 10px;
     display: block;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 img {
@@ -41,9 +44,9 @@ img {
 
 .back {
     color: #ffffff;
-    padding: 5px 10px;
+    padding: 2.5% 2.5%;
     text-align: left;
-    text-decoration: underline;
+    display: block;
 }
 
 .welcome {
@@ -75,13 +78,13 @@ img {
 
 .project {
     text-align: left;
-    width: 33%;
+    width: 20%;
     height: auto;
     padding: 1% 1% 0.5% 1%;
     background-color: #875991;
-    border-width: 20px;
+/*    border-width: 20px;
     border-color: #875991;
-    border-style: solid;
+    border-style: dashed;*/
 }
 
 .project.empty {
@@ -108,15 +111,31 @@ img {
 
 .project-image {
     width: 95%;
-    padding: 0 2.5%;
+    padding: 2px 2.5%;
+    display: block;
+}
+
+.project-thumbnail {
+    width: 95%;
+    padding: 2.5%;
+    display: block;
 }
 
 .project-heading {
-    color: #dddddd;
+    color: #ffffff;
     font-size: 36px;
     font-weight: bold;
     padding: 1px 2.5%;
     display: block;
     text-align: left;
     text-decoration: underline;
+}
+
+.project-subheading {
+    padding: 0 2.5%;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
 }
