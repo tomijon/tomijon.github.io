@@ -82,9 +82,11 @@ img {
     height: auto;
     padding: 1% 1% 0.5% 1%;
     background-color: #875991;
-/*    border-width: 20px;
-    border-color: #875991;
-    border-style: dashed;*/
+}
+
+.repo {
+    margin: 0;
+    padding: 0;
 }
 
 .project.empty {
