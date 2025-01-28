@@ -112,8 +112,8 @@ img {
 } 
 
 .project-image {
-    width: 95%;
-    padding: 2px 2.5%;
+    width: 70%;
+    padding: 2px 15%;
     display: block;
 }
 
@@ -140,4 +140,13 @@ img {
     font-weight: bold;
     display: block;
     text-align: left;
+}
+
+.project-video {
+    top: 0;
+    left: 0;
+    aspect-ratio: 16/9;
+    width: 70%;
+    padding: 2px 15% 10vh 15%;
+    border: none;
 }
