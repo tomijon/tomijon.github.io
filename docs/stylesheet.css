@@ -119,6 +119,7 @@ img {
 
 .project-thumbnail {
     width: 95%;
+    min-width: 95%;
     padding: 2.5%;
     display: block;
 }
