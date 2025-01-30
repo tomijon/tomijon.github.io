@@ -14,18 +14,6 @@ p {
     text-align: center;
 }
 
-a {
-    padding: 2.5%;
-    color: #ffffff;
-    font-size: 18px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
 img {
     margin: auto auto;
     width: 100%;
@@ -117,12 +105,6 @@ img {
     display: block;
 }
 
-.project-thumbnail {
-    width: 95%;
-    aspect-ratio: 1;
-    padding: 2.5%;
-    display: block;
-}
 
 .project-heading {
     color: #ffffff;
@@ -151,3 +133,69 @@ img {
     padding: 2px 15% 10vh 15%;
     border: none;
 }
+
+
+.border-style {
+    border-color: #563566;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.project-padding {
+    padding: 0px 2.5%;
+}
+
+.project-list-container {
+    display: block;
+    width: 95%;
+    background-color: #100624;
+}
+
+.project-list-item {
+    padding: 2.5% 0;
+}
+
+.project-list-item:hover {
+    background-color: #322846;
+}
+
+.project-list-item-thumbnail {
+    width: 30%;
+    aspect-ratio: 1;
+    display: inline-flex;
+}
+
+.project-list-information {
+    width: 64%;
+    vertical-align: top;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #563566;
+    white-space: normal;
+}
+
+.project-list-information-right {
+    margin-left: 2.5%;
+    padding-left: 2.5%;
+}
+
+.project-list-information-left {
+    margin-right: 2.5%;
+    padding-left: 2.5%;
+}
+
+.project-list-item-title {
+    color: #dddddd;
+    font-size: 150%;
+    text-decoration: underline;
+    display: block;
+    text-align: left;
+}
+
+.project-list-item-text {
+    color: #dddddd;
+    font-size: 100%;
+    display: block;
+    text-align: left;
+}
+
