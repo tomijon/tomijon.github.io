@@ -189,14 +189,20 @@ img {
     color: #dddddd;
     font-size: 150%;
     text-decoration: underline;
-    display: block;
+    display: flex;
     text-align: left;
+    margin: 10px;
 }
 
 .project-list-item-text {
     color: #dddddd;
-    font-size: 100%;
-    display: block;
+    font-size: 80%;
+    display: flex;
     text-align: justify;
+    margin: 5px;
+}
+
+a:visited, a:link {
+    text-decoration: none;
 }
 
