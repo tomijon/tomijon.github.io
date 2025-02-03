@@ -9,6 +9,33 @@
         <a class="back" href="../../index.html">< back</a>
         <h1 class="project-title">Evolutionary Algorithms</h1>
         <hr class="bar">
-        <p class="project-text">This project contains a python program for creating evolutionary algorithms. It also contains different applications showcasing the project in use.</p>
+        <p class="project-text">
+            This project was for univeristy coursework. The aim was to create
+            a genetic algorithm that could match an input image up to 95%. The
+            catch was that we could only use up to 100 polygons.
+        </p>
+        <p class="project-text">
+            We were provided with a small template that handled image
+            evaluation and drawing polygons to an image. We were tasked with
+            implementing the selection, crossover and mutation functions. We
+            were supposed to use the genetic algorithm python module deap
+            which provides functions to use. However, my own implementation ran
+            faster.
+        </p>
+        <p class="project-text">
+            The trick to getting the algorithm to perform efficiently was to 
+            figure out when it would be a good time to add a new polygon. It
+            was much better to start with 1-3 polygons and then add more as the
+            program slowed down. I opted to adding a new polygon after the 
+            percentage increase of the solution each generation became somewhat
+            stable. I took this approach so that the new polygons could add
+            detail to the image, without changing the basic shape, similar to
+            adding layers in painting.
+        </p>
+        <p class="project-text">
+            I have since started rewriting this project using C++ and OpenGL,
+            working on a highly optimised version. You can find the repository 
+            <a class="inline-repo-link" href="https://github.com/tomijon/Genetic-Polygon-Imaging">here</a>.
+        </p>
     </div>
 </body>
