@@ -128,7 +128,7 @@ img {
     left: 0;
     aspect-ratio: 16/9;
     width: 70%;
-    padding: 2px 15% 10vh 15%;
+    padding: 2px 15% 5vh 15%;
     border: none;
 }
 
@@ -211,6 +211,15 @@ a:visited, a:link {
 }
 
 .repo-link {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #dddddd;
+    padding-bottom: 5px;
+}
 
+.repo-link:visited .repo-link:link {
+    color: #dddddd;
+    text-decoration: none;
 }
 
