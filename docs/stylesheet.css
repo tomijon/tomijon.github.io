@@ -206,7 +206,7 @@ img {
     margin: 5px;
 }
 
-a:visited, a:link {
+.project-list-container:visited, .project-list-container:link {
     text-decoration: none;
 }
 
@@ -222,4 +222,15 @@ a:visited, a:link {
     color: #dddddd;
     text-decoration: none;
 }
+
+.inline-repo-link {
+    color: #dddddd;
+    text-decoration: underline;
+}
+
+.inline-repo-link:visited .inline-repo-link:link {
+    color: #dddddd;
+    text-decoration: underline;
+}
+
 
