@@ -8,12 +8,57 @@
     <div class="content">
         <a class="back" href="../../index.html">< back</a>
         <h1 class="project-title">Game of Life Pattern Recognition</h1>
-        <a href="">Click here for the Repository!</a>
+        <a class="repo-link" href="https://github.com/tomijon/game-of-life-pattern-recognition">Click here for the Repository!</a>
 
-        <iframe class="project-video" src=""></iframe>
+        <iframe class="project-video" src="https://www.youtube.com/embed/5Qc5tpAhchs"></iframe>
 
         <hr class="bar">
 
         <p class="project-text">
+            Game of Life is one of my favourite programs to make. It is simple,
+            but there is something fun about watching the cells move around the
+            screen. To my surprise, one of my university course works turned
+            out to be pattern matching in Conway's Game of Life. This included
+            finding patterns that are stationary, as well as patterns that have
+            a cycle.
+        </p>
+        <p class="project-text">
+            I defined still-life patterns has having a period of 1, meaning
+            they had to be present for 2 generations before being confirmed as
+            a target pattern. For patterns with a time period, this meant that
+            they had to be alive for one whole cycle, including start and end
+            points. I ended up defining both patterns as the same type, as a
+            still life is periodic just its period is every generation instead
+            of over multiple.
+        </p>
+
+        <h2 class="project-heading">The Technical Stuff.</h2>
+        <p class="project-text">
+            The entire world is represented as a graph using a HashMap data
+            structure. This allows the world to be incredibly large, and
+            reduces the number of updates and pattern checks required.
+            Updates only occur on the alive cells and the dead cells
+            surrounding them. This prevents updating unnecessary dead cells as
+            all dead cells with no live neighbors cannot change state.
+            
+        </p>
+        <p class="project-text">
+            When it came to pattern matching, a graph was made for each 
+            target pattern and for each state it could be in. Then, regions of
+            the world were flood filled to find patterns. There were two levels
+            flood filling. One included just neighboring alive cells, while
+            another was all alive cells connected by at least one dead neighbor.
+            This was sufficient for finding all the patterns we were meant to
+            find.
+        </p>
+        <p class="project-text">
+            The project could be expanded so that the patterns can be found
+            naturally without being predefined. This can be done by storing
+            patterns and resolving them, creating a network of patterns.
+            Patterns that have a cycle will be still lifes or oscillators.
+            This is something I would like to get into in the future, using
+            threads to compute the solutions before returning to the main
+            world.
+        </p>
     </div>
 </body>
