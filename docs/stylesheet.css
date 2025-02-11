@@ -70,6 +70,14 @@ img {
     background-color: #875991;
 }
 
+.profile-img {
+    margin-top: 20px;
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: block;
+}
+
 .repo {
     margin: 0;
     padding: 0;
