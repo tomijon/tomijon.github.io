@@ -8,12 +8,36 @@
     <div class="content">
         <a class="back" href="../../index.html">< back</a>
         <h1 class="project-title">OpenGL Project</h1>
+        <a class="repo-link"></a>
 
         <iframe class="project-video" src="https://www.youtube.com/embed/Jm1cHY__5Wk"></iframe>
 
         <hr class="bar">
 
         <p class="project-text">
+            This project dived into OpenGL rendering and shaders. This project
+            was for university and the aim was to create a scene which
+            displayed a planet surface and then implement various effects. I
+            decided to create planets.
+        </p>
+        <p class="project-text">
+            To create the planets, I created a perlin noise generator in Python
+            to create a cubemap. The noise doesnt quite line up but using some
+            maths the cubemap can be turned into a planet.
+        </p>
+        <p class="project-text">
+            I create a few post processing effects, including bloom, a black
+            and white filter, a two different variations of blurs. These were
+            all created in the shaders used, and the system I made allowed
+            these to be layered over each other. The blur effects work quite
+            well with the black and white effect as the blurs remove noise
+            artefacts.
+        </p>
+        <p class="project-text">
+            We also had to implement basic lighting, which involved the Phong
+            lighting model. I also created a camera track system which allowed
+            for the smooth animation of the cameras position and rotatation
+            along all 3 axes.
         </p>
     </div>
 </body>
