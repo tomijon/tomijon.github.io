@@ -219,16 +219,17 @@ img {
 }
 
 .repo-link {
-    text-decoration: none;
+    text-decoration: underline;
     text-align: center;
     display: block;
-    color: #dddddd;
+    color: #2fa4d6;
     padding-bottom: 5px;
+    font-size: 24px;
 }
 
 .repo-link:visited .repo-link:link {
     color: #dddddd;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .inline-repo-link {
