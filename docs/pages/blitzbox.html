@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <base href="tomijon.github.io">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+</head>
+<body>
+    <div class="content">
+        <a class="back" href="../../index.html">< back</a>
+        <h1 class="project-title">BlitzBox</h1>
+        <hr class="bar">
+
+        <iframe class="project-video" src="https://www.youtube.com/embed/xMGoUh14qWc"></iframe>
+        <a class="repo-link" href="https://github.com/kieranknowles1/csc8508-team-project">Click here for the Repository!</a>
+
+        <hr class="bar">
+
+        <p class="project-text">
+            BlitzBox was a team project made for University. We spent 9 weeks
+            working together on different areas of the game. I was responsible
+            for the networking and some gameplay areas, such as the damage,
+            score and health systems.
+        </p>
+        <p class="project-text">
+            I worked hard on getting the network to run smoothly and on a
+            separate thread. I used the ENet library to make my own server and
+            packet system. I then made a threadsafe object that was
+            used to track the state of networked objects. 
+        </p>
+        <p class="project-text">
+            In order to make movement as smooth as possible, the states were
+            interpolated between based on the network tick rate. I also
+            created a buffer which would store packets and process them with
+            a delay of around 100ms (from when they were sent). This meant that
+            it was much less likely that packets would be dropped.
+        </p>
+        <p class="project-text">
+            I worked closely with my team to integrate what they had been
+            working on with the network so that everything would work smoothly.
+            I also worked on the damage and health system, which included
+            healing, spawn invulnerability, and different damage types.
+        </p>
+        <p class="project-text">
+            I really enjoyed working on this project and working with my fellow
+            teammates. I think we worked incredibly well together and we are
+            all very happy with how the game turned out.
+        </p>
+    </div>
+</body>
