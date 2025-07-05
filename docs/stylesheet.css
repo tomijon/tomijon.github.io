@@ -100,14 +100,14 @@ img {
 .project-text {
     color: #dddddd;
     font-size: 18px;
-    padding: 1px 2.5%;
+    padding: 1px 20%;
     display: block;
     text-align: justify;
 } 
 
 .project-image {
-    width: 70%;
-    padding: 2px 15%;
+    width: 60%;
+    padding: 2px 20%;
     display: block;
 }
 
@@ -135,8 +135,8 @@ img {
     top: 0;
     left: 0;
     aspect-ratio: 16/9;
-    width: 70%;
-    padding: 10px 15% 10px 15%;
+    width: 60%;
+    padding: 10px 20% 10px 20%;
     border: none;
 }
 
@@ -233,8 +233,8 @@ img {
 }
 
 .inline-repo-link {
-    color: #dddddd;
     text-decoration: underline;
+    color: #55c978;
 }
 
 .inline-repo-link:visited .inline-repo-link:link {
