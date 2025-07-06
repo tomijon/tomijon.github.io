@@ -36,6 +36,7 @@ img {
 }
 
 .projects-item {
+    border-radius: 3px;
     margin: 2.5% 2.5%;
     padding: 2.5% 1.25%;
     background-color: #222222;
@@ -59,7 +60,7 @@ img {
 }
 
 .projects-item:hover {
-    background-color: #322846;
+    background-color: #bcfe58;
     transition: background-color 0.3s;
 }
 
