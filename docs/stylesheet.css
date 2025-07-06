@@ -1,31 +1,198 @@
-
 body {
-    background-color: #100624;
+    background-color: #222222;
+    font-family: Consolas !important;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     padding: 2% 10px;
+    border-radius: 3px;
 }
 
 p {
     color: #dddddd;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 img {
     margin: auto auto;
-    width: 100%;
+    width: 40%;
+    height: auto;
 }
+
+
+.projects-title{
+    color: #dddddd;
+    font-size: 2rem;
+    text-decoration: underline;
+    display: flex;
+    text-align: left;
+    margin: 10px;
+}
+
+.projects-container {
+    margin: 2.5%;
+    display: inline-block;
+    width: 95%;
+    background-color: #222222;
+    border-radius: 3px;
+}
+
+.projects-item {
+    margin: 2.5% 2.5%;
+    padding: 2.5% 1.25%;
+    background-color: #222222;
+    display: flex;
+    text-align: left;
+}
+
+.projects-text {
+    width: 60%;
+    vertical-align: top;
+    margin: 0 1.25%;
+    padding: 2.5%;
+    border-radius: 3px;
+    background-color: #000000;
+}
+
+.projects-title {
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+}
+
+.projects-item:hover {
+    background-color: #322846;
+    transition: background-color 0.3s;
+}
+
+.projects-thumbnail {
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 3px;
+    margin: 0 1.25%;
+}
+
+.projects-item:visited, .projects-item:link {
+    text-decoration: none;
+}
+
+@media (orientation: landscape) {
+    /* Main page styling. */
+    .content {
+        align-content: center;
+        margin: 1vw auto;
+        width: 100%;
+        min-width: 90vh;
+        max-width: 100vh;
+        background-color: #000000;
+    }
+
+    /* Header section styles. */
+    .header {
+        display: block;
+        margin: 5% auto;
+    }
+
+    .header-title {
+        color: #ffffff;
+        font-size: 6rem;
+        text-align: center;
+        padding: 1% 0 0 0;
+        margin: 0;
+    }
+
+    .header-tagline {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    /* About me styles. */
+    .about-me {
+        margin: auto 5%;
+        display: flex;
+    }
+
+    .about-me-image {
+        margin: 0 auto;
+        width: 25%;
+        aspect-ratio: 1;
+        border-radius: 1%;
+        display: block;
+    }
+
+    .about-me-description {
+        padding: 0 0 0 5%;
+        width: 90%;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Projects List styles */
+    .item-description {
+        display: block;
+    }
+}
+
+@media (orientation: portrait) {
+    /* Main page styling. */
+    .content {
+        align-content: center;
+        margin: 1vw auto;
+        width: 100%;
+        min-width: 90vw;
+        max-width: 100vw;
+        background-color: #000000;
+    }
+
+    /* Header section styles. */
+    .header {
+        display: block;
+        margin: 5% auto;
+    }
+
+    .header-title {
+        margin: 3% auto;
+        color: #ffffff;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .header-tagline {
+        margin: 3% auto;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    /* About me styles. */
+    .about-me {
+        display: block;
+    }
+
+    .about-me-image {
+        margin: 5% auto 0% auto;
+        width: 40%;
+        aspect-ratio: 1;
+        border-radius: 1%;
+        display: block;
+    }
+
+    .about-me-description {
+        padding: 5%;
+        width: 90%;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* Projects List styles */
+    .item-description {
+        display: block;
+    }
+
+
+}
+
 
 .center {
     margin: 0 auto;
-}
-
-.content {
-    margin: 0 auto;
-    width: 90vmin;
-    background-color: #563566;
-    padding: 5px 10px;
-    border-radius: 3px;
 }
 
 .back {
@@ -37,12 +204,9 @@ img {
 
 .welcome {
     color: #ffffff;
-    font-size: 15vmin;
-    font-family: Roboto Slab;
+    font-size: 3rem;
+    font-family: Consolas;
     text-align: center;
-    padding: 10px 5px 1px 5px;
-    display: block;
-    margin-bottom: 0;
 }
 
 .subtitle {
@@ -52,15 +216,14 @@ img {
 }
 
 .bar {
-    border-color: #b38b47;
+    border-color: #bcfe58;
+    background-color: #bcfe58;
     display: block;
     width: 95%;
+    height: 5px;
+    margin: 2.5%;
 }
 
-.project-list {
-    table-layout: fixed;
-    width: 100%;
-}
 
 .project {
     text-align: left;
@@ -70,13 +233,6 @@ img {
     background-color: #875991;
 }
 
-.profile-img {
-    margin-top: 20px;
-    width: 60%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    display: block;
-}
 
 .repo {
     margin: 0;
@@ -89,7 +245,7 @@ img {
 
 .project-title {
     color: #ffffff;
-    font-size: 600%;
+    font-size: 4rem;
     font-family: Roboto Slab;
     text-align: center;
     padding: 10px 5px 1px 5px;
@@ -99,7 +255,7 @@ img {
 
 .project-text {
     color: #dddddd;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 1px 20%;
     display: block;
     text-align: justify;
@@ -142,21 +298,13 @@ img {
 
 
 .border-style {
-    border-color: #563566;
+    border-color: #bcfe58;
     border-width: 2px;
     border-style: solid;
 }
 
 .project-padding {
     padding: 0px 2.5%;
-}
-
-.project-list-container {
-    margin: 2.5%;
-    display: inline-block;
-    width: 95%;
-    background-color: #100624;
-    border-radius: 3px;
 }
 
 .project-list-item {
@@ -204,14 +352,6 @@ img {
     display: flex;
     text-align: left;
     margin: 10px;
-}
-
-.project-list-item-text {
-    color: #dddddd;
-    font-size: 80%;
-    display: flex;
-    text-align: justify;
-    margin: 5px;
 }
 
 .project-list-container:visited, .project-list-container:link {
