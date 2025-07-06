@@ -141,6 +141,10 @@ img {
 
 @media (orientation: portrait) {
     /* Main page styling. */
+    * {
+        box-sizing: border-box;
+    }
+
     .content {
         align-content: center;
         margin: 1vw auto;
