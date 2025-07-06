@@ -6,6 +6,8 @@
 </head>
 <body>
     <section class="content">
+
+<!-- Header Section -->
         <div class="header">
             <div class="header-bio">
                 <h1 class="header-title">Thomas Johnson</h1>
@@ -14,6 +16,7 @@
         </div>
         <hr class="bar">    
 
+<!-- About Me Section -->
         <div class="about-me">
              <img class="about-me-image" src="docs/assets/profile.jpg" alt="A picture of Thomas Johnson who is the owner of the website." />
              <p class="about-me-description">
@@ -31,46 +34,66 @@
         <h2 class="subtitle">Projects</h2>
         <p style="text-align: center; margin: 2.5%;">Please note, this website is very much under development. Some project pages may still be in development.</p>
 
-        <!-- Blitzbox -->
-        <a class="projects-item" href="docs/pages/blitzbox.html">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">BlitzBox</h3>
-                <p class="item-description">
-                    In Blitzbox, play against ai or other players and be
+<!-- List of Projects
+    Landscape classes are only displayed in landscape orientation.
+    Same goes for portrait classes.
+
+    This is to allow support for mobile devices.
+-->
+
+<!-- Blitzbox -->
+        <a class="projects-item-landscape" href="docs/pages/blitzbox.html">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">BlitzBox</h3>
+                <p class="item-description-landscape">
+                    In Blitzbox, play against AI or other players and be
                     the best gravity defying laser shooter inside the box.
                 </p>
-                <p class="item-description">
+                <p class="item-description-landscape">
                     This was a team project made by 8 of us at Newcastle
                     University. It took us 9 weeks to make. I was
                     responsible for the networking, and a few other areas
-                    of the game.
+                    of the game. It was very successful, scoring high marks
+                    and was very fun to play.
                 </p>
             </div>
-            <img class="projects-thumbnail border-style" src="docs/assets/blitzbox_thumbnail.gif">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/blitzbox_thumbnail.gif">
+        </a>
+        
+        <a class="projects-item-portrait" href="docs/pages/blitzbox.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/blitzbox_thumbnail.gif">
+            <h3 class="projects-title-portrait">BlitzBox</h3>
         </a>
 
-        <!-- Dreaded Deep -->
-        <a class="projects-item" href="docs/pages/dreaded_deep.html">
-            <img class="projects-thumbnail border-style" src="docs/assets/dreaded_deep_thumbnail.gif">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Dreaded Deep</h3>
-                <p class="item-description">
+<!-- Dreaded Deep -->
+        <a class="projects-item-landscape" href="docs/pages/dreaded_deep.html">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/dreaded_deep_thumbnail.gif">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Dreaded Deep</h3>
+                <p>
                     A game made for the NUGDS (Newcastle University Game
                     Dev Society) Game Jam. Explore the dark cave and
                     retrieve all the artefacts to win! But be careful, a
                     hungry shark prowls these waters.
                 </p>
-                <p class="item-description">
+                <p>
                     This project was made in unreal for a 2 week game jam.
+                    Due to other responsibilities, I only worked on the sounds system
+                    for this game. I also made all sounds and music.
                 </p>
             </div>
         </a>
 
-        <!-- Dissertation -->
-        <a class="projects-item" href="docs/pages/dissertation.html">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Dissertation Project</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/dreaded_deep.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/dreaded_deep_thumbnail.gif">
+            <h3 class="projects-title-portrait">Dreaded Deep</h3>
+        </a>
+
+<!-- Dissertation -->
+        <a class="projects-item-landscape" href="docs/pages/dissertation.html">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Dissertation Project</h3>
+                <p>
                     This project researched the performance impact of
                     procedural terrain generation on the CPU vs on the GPU.
                     It was the first program in which I used C++, OpenGL
@@ -79,58 +102,73 @@
                     perlin noise and value noise functions. A custom weight
                     function was made to smooth the noise.
                 </p>
-                <p class="item-description">
+                <p>
                     This was my 3rd year dissertation project for my
                     university degree which took 12 weeks long. It included
                     researching, writing the project and a final write up.
                 </p>
             </div>
-            <img class="projects-thumbnail border-style" src="docs/assets/dissertation_thumbnail.gif">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/dissertation_thumbnail.gif">
         </a>
 
-        <!-- Conway's Game of Life Pattern Recognition -->
-        <a class="projects-item" href="docs/pages/game_of_life_pattern_recognition.html">
-            <img class="projects-thumbnail border-stylee" src="docs/assets/game_of_life_thumbnail.gif">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Game of Life Pattern Recognition</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/dissertation.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/dissertation_thumbnail.gif">
+            <h3 class="projects-title-portrait">Dissertation Project</h3>
+        </a>
+
+<!-- Conway's Game of Life Pattern Recognition -->
+        <a class="projects-item-landscape" href="docs/pages/game_of_life_pattern_recognition.html">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/game_of_life_thumbnail.gif">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Game of Life Pattern Recognition</h3>
+                <p>
                     A scalable program that finds patterns in Conway's
                     'Game of Life'. The world and patterns are represented
                     as a graph which allows for fast pattern recognition
                     and optimised world updates.
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in C++ in 2 weeks for a
                     university coursework.
                 </p>
             </div>
         </a>
 
-        <!-- Planets in OpenGL -->
-        <a class="projects-item" href="docs/pages/opengl_planets.html">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Space Graphics</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/game_of_life_pattern_recognition.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/game_of_life_thumbnail.gif">
+            <h3 class="projects-title-portrait">Game of Life Pattern Recognition</h3>
+        </a>
+
+<!-- Planets in OpenGL -->
+        <a class="projects-item-landscape" href="docs/pages/opengl_planets.html">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Space Graphics</h3>
+                <p>
                     A program that draws a planet and a sun with various
                     post processing and lighting effects. Planets are made
                     from cube maps with layered textures. Post processing
                     (blurs, bloom, black+white filter) effects can be
                     layered.
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in C++ and OpenGL in 3 weeks
                     for a university coursework.
                 </p>
             </div>
-            <img class="projects-thumbnail border-style" src="docs/assets/opengl_planets_thumbnail.gif">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/opengl_planets_thumbnail.gif">
         </a>
 
-        <!-- Little Kitty Big Deadline -->
-        <a class="projects-item" href="docs/pages/little_feline_big_deadline.html">
-            <img class="projects-thumbnail border-style" src="docs/assets/cat_game_thumbnail.gif">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Little Feline Big Deadline.</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/opengl_planets.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/opengl_planets_thumbnail.gif">
+            <h3 class="projects-title-portrait">Space Graphics</h3>
+        </a>
+
+<!-- Little Kitty Big Deadline -->
+        <a class="projects-item-landscape" href="docs/pages/little_feline_big_deadline.html">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/cat_game_thumbnail.gif">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Little Feline Big Deadline.</h3>
+                <p>
                     A game in which you collect cats within a certain
                     amount of time and record a high score, while an AI
                     hunts you down and also steals cats. Major feature is
@@ -138,78 +176,104 @@
                     Plane Intersection and Cohen–Sutherland Clipping
                     Algorithm for accurate collision resolution.
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in C++ in 2 weeks for a
                     university coursework.
                 </p>
             </div>
         </a>
 
-        <!-- Evolutionary Algorithm -->
-        <a class="projects-item" href="docs/pages/evolutionary_algorithms.html">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Evolutionary Algorithms</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/little_feline_big_deadline.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/cat_game_thumbnail.gif">
+            <h3 class="projects-title-portrait">Little Feline Big Deadline.</h3>
+        </a>
+
+<!-- Evolutionary Algorithm -->
+        <a class="projects-item-landscape" href="docs/pages/evolutionary_algorithms.html">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Evolutionary Algorithms</h3>
+                <p>
                     This program recreates images from polygons utilising
                     a genetic algorithm. The GIF to the right is a 97% match
                     and took 7 hours to compute!
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in Python for a university
                     coursework.
                 </p>
             </div>
-            <img class="projects-thumbnail border-stylee" src="docs/assets/evolutionary_polygons_thumbnail.gif">
+            <img class="projects-thumbnail-landscape border-stylee" src="docs/assets/evolutionary_polygons_thumbnail.gif">
         </a>
 
-        <!-- Bubble Pop -->
-        <a class="projects-item" href="docs/pages/bubble_pop.html">
-            <img class="projects-thumbnail border-style" src="docs/assets/bubble_pop.png">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Bubble Pop</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/evolutionary_algorithms.html">
+            <img class="projects-thumbnail-portrait border-stylee" src="docs/assets/evolutionary_polygons_thumbnail.gif">
+            <h3 class="projects-title-portrait">Evolutionary Algorithms</h3>
+        </a>
+
+<!-- Bubble Pop -->
+        <a class="projects-item-landscape" href="docs/pages/bubble_pop.html">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/bubble_pop.png">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Bubble Pop</h3>
+                <p>
                     Pop the bubbles as fast as you can to score the
                     highest! Try not to make mistakes, as mistakes reset
                     your score multiplier and reduces your score.
                 </p>
-                <p class="item-description">
+                <p>
                     This game was written in C++ using SFML for the 2025
                     Global Game Jam. It was made in 48 hours.
                 </p>
             </div>
         </a>
 
-        <!-- Langtons Ant -->
-        <a class="projects-item" href="docs/pages/langtons_ant.html">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Langtons Ant</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/bubble_pop.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/bubble_pop.png">
+            <h3 class="projects-title-portrait">Bubble Pop</h3>
+        </a>
+
+<!-- Langtons Ant -->
+        <a class="projects-item-landscape" href="docs/pages/langtons_ant.html">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Langtons Ant</h3>
+                <p>
                     A simple python program that runs a langtons ant algorithm. Was written
                     using Python and pygame.
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in Python for fun in about 2 hours.
                 </p>
             </div>
-            <img class="projects-thumbnail border-style" src="docs/assets/langtons_ant_thumbnail.gif">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/langtons_ant_thumbnail.gif">
         </a>
 
-        <!-- Minesweper -->
-        <a class="projects-item" href="docs/pages/minesweeper.html">
-            <img class="projects-thumbnail border-style" src="docs/assets/minesweeper_thumbnail.gif">
-            <div class="projects-text border-style">
-                <h3 class="projects-title">Minesweeper</h3>
-                <p class="item-description">
+        <a class="projects-item-portrait" href="docs/pages/langtons_ant.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/langtons_ant_thumbnail.gif">
+            <h3 class="projects-title-portrait">Langtons Ant</h3>
+        </a>
+
+<!-- Minesweper -->
+        <a class="projects-item-landscape" href="docs/pages/minesweeper.html">
+            <img class="projects-thumbnail-landscape border-style" src="docs/assets/minesweeper_thumbnail.gif">
+            <div class="projects-text-landscape border-style">
+                <h3 class="projects-title-landscape">Minesweeper</h3>
+                <p>
                     Inspired by the classic game minesweeper! This
                     project was written in python to recreate the game of
                     minesweeper. It was a short term project to do for fun
                     as something different to what I typically made at the
                     time (Game of Life and Snake games).
                 </p>
-                <p class="item-description">
+                <p>
                     This project was written in Python using Pygame.
                 </p>
             </div>
         </a>
+
+        <a class="projects-item-portrait" href="docs/pages/minesweeper.html">
+            <img class="projects-thumbnail-portrait border-style" src="docs/assets/minesweeper_thumbnail.gif">
+            <h3 class="projects-title-portrait">Minesweeper</h3>
+        </a>
+
     </section>
 </body>

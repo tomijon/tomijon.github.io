@@ -17,62 +17,20 @@ img {
     height: auto;
 }
 
-
-.projects-title{
-    color: #dddddd;
-    font-size: 2rem;
-    text-decoration: underline;
-    display: flex;
-    text-align: left;
-    margin: 10px;
+.landscape {
+    display: none;
 }
 
-.projects-container {
-    margin: 2.5%;
-    display: inline-block;
-    width: 95%;
-    background-color: #222222;
-    border-radius: 3px;
+.portrait {
+    display: none;
 }
 
-.projects-item {
-    border-radius: 3px;
-    margin: 2.5% 2.5%;
-    padding: 2.5% 1.25%;
-    background-color: #222222;
-    display: flex;
-    text-align: left;
+.projects-item-landscape {
+    display: none;
 }
 
-.projects-text {
-    width: 60%;
-    vertical-align: top;
-    margin: 0 1.25%;
-    padding: 2.5%;
-    border-radius: 3px;
-    background-color: #000000;
-}
-
-.projects-title {
-    text-align: left;
-    margin: 0 auto;
-    display: block;
-}
-
-.projects-item:hover {
-    background-color: #bcfe58;
-    transition: background-color 0.3s;
-}
-
-.projects-thumbnail {
-    width: 30%;
-    aspect-ratio: 1;
-    border-radius: 3px;
-    margin: 0 1.25%;
-}
-
-.projects-item:visited, .projects-item:link {
-    text-decoration: none;
+.projects-item-portrait {
+    display: none;
 }
 
 @media (orientation: landscape) {
@@ -84,6 +42,10 @@ img {
         min-width: 90vh;
         max-width: 100vh;
         background-color: #000000;
+    }
+
+    .landscape {
+        display: flex;
     }
 
     /* Header section styles. */
@@ -128,8 +90,53 @@ img {
     }
 
     /* Projects List styles */
-    .item-description {
+    .projects-item-landscape {
+        border-radius: 3px;
+        margin: 2.5% 2.5%;
+        padding: 2.5% 1.25%;
+        background-color: #222222;
+        text-align: left;
+        display: flex;
+    }
+
+    .projects-title-landscape {
+        color: #dddddd;
+        font-size: 2rem;
+        text-decoration: underline;
+        display: flex;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .projects-text-landscape {
+        width: 60%;
+        vertical-align: top;
+        margin: 0 1.25%;
+        padding: 2.5%;
+        border-radius: 3px;
+        background-color: #000000;
+    }
+
+    .projects-title-landscape {
+        text-align: left;
+        margin: 0 auto;
         display: block;
+    }
+
+    .projects-item-landscape:hover {
+        background-color: #bcfe58;
+        transition: background-color 0.3s;
+    }
+
+    .projects-thumbnail-landscape {
+        width: 30%;
+        aspect-ratio: 1;
+        border-radius: 3px;
+        margin: 0 1.25%;
+    }
+
+    .projects-item-landscape:visited, .projects-item-landscape:link {
+        text-decoration: none;
     }
 }
 
@@ -142,6 +149,10 @@ img {
         min-width: 90vw;
         max-width: 100vw;
         background-color: #000000;
+    }
+
+    .portrait {
+        display: flex;
     }
 
     /* Header section styles. */
@@ -184,11 +195,55 @@ img {
     }
 
     /* Projects List styles */
-    .item-description {
+    .projects-item-portrait {
+        border-radius: 3px;
+        margin: 2.5% 2.5%;
+        padding: 2.5% 1.25%;
+        background-color: #222222;
+        text-align: left;
         display: block;
     }
 
+    .projects-title-portrait {
+        color: #dddddd;
+        font-size: 2rem;
+        text-decoration: underline;
+        display: block;
+        text-align: left;
+        margin: 10px;
+    }
 
+    .projects-text-portrait {
+        width: 60%;
+        vertical-align: top;
+        margin: 0 1.25%;
+        padding: 2.5%;
+        border-radius: 3px;
+        background-color: #000000;
+    }
+
+    .projects-title-portrait {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .projects-item-portrait:hover {
+        background-color: #bcfe58;
+        transition: background-color 0.3s;
+    }
+
+    .projects-thumbnail-portrait {
+        aspect-ratio: 1;
+        border-radius: 3px;
+        margin: 2.5% 2.5%;
+        display: block;
+        width: 95%;
+    }
+
+    .projects-item-portrait:visited, .projects-item-portrait:link {
+        text-decoration: none;
+    }
 }
 
 
